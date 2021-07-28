@@ -7,4 +7,3 @@ CASE
 END AS Nível
 FROM hr.jobs
 ORDER BY OB_TITLE ASC;
-
