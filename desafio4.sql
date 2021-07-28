@@ -10,4 +10,4 @@ FROM hr.jobs AS t1
 INNER JOIN hr.employees AS t2
 ON t1.JOB_ID = t2.JOB_ID
 GROUP BY Cargo
-ORDER BY ROUND(AVG(t2.SALARY), 2) ASC;
+ORDER BY 'Média salarial', Cargo ASC;

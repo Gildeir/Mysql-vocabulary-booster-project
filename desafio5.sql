@@ -6,4 +6,4 @@ FROM hr.jobs AS t1
 INNER JOIN hr.employees AS t2
 ON t1.JOB_ID = t2.JOB_ID
 GROUP BY Cargo
-ORDER BY (MAX_SALARY - MIN_SALARY) ASC;
+ORDER BY 'Varicação Salarial', Cargo;
