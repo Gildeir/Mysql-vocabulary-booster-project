@@ -13,4 +13,4 @@ ON t1.JOB_ID = t3.JOB_ID
 INNER JOIN
 hr.departments t4
 ON t3.DEPARTMENT_ID = t4.DEPARTMENT_ID
-ORDER BY `Nome Completo` DESC, CARGO ASC;
+ORDER BY `Nome Completo` DESC, `Cargo` ASC;
