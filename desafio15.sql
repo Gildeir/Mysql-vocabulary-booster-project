@@ -11,5 +11,3 @@ WHERE jobs.JOB_TITLE = cargo
 GROUP BY JOB_TITLE;
 END $$
 DELIMITER ;
-
-
