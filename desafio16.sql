@@ -5,8 +5,8 @@ RETURNS INT READS SQL DATA
 BEGIN
 DECLARE total_jobs INT;
 SELECT
-COUNT(*)
-FROM hr.job_history
+COUNT(jobH.EMPLOYEE_ID)
+FROM hr.job_history AS jobH
 INNER JOIN hr.employees
 ON employees.EMPLOYEE_ID = job_history.EMPLOYEE_ID
 WHERE EMAIL = pessoa INTO total_jobs;
