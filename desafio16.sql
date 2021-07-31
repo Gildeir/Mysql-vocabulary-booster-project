@@ -6,8 +6,8 @@ BEGIN
 DECLARE total_jobs INT;
 SELECT
 COUNT(jobH.EMPLOYEE_ID)
-FROM hr.job_history AS jobH
-INNER JOIN hr.employees
+FROM job_history AS jobH
+INNER JOIN employees
 ON employees.EMPLOYEE_ID = job_history.EMPLOYEE_ID
 WHERE EMAIL = pessoa INTO total_jobs;
 RETURN total_jobs;
